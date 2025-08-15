@@ -44,55 +44,14 @@ body {
   background-color: #138808;
 }
 
-/* Chakra with 24 spokes */
+/* Chakra with 24 spokes using radial gradient */
 .chakra {
   width: 60px;
   height: 60px;
   border: 2px solid #000080;
   border-radius: 50%;
   position: relative;
+  background: radial-gradient(circle at center, transparent 0%, transparent 45%, #000080 45%, #000080 50%, transparent 50%, transparent 100%),
+              repeating-conic-gradient(#000080 0deg 15deg, transparent 15deg 30deg);
+  background-size: 100% 100%;
 }
-
-.chakra::before,
-.chakra::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 2px;
-  height: 28px;
-  background-color: #000080;
-  transform-origin: center;
-}
-
-.chakra::before {
-  transform: translate(-50%, -50%) rotate(0deg);
-}
-
-.chakra::after {
-  transform: translate(-50%, -50%) rotate(15deg);
-}
-
-/* Manually define 24 spokes */
-.chakra::after:nth-child(3) { transform: translate(-50%, -50%) rotate(30deg); }
-.chakra::after:nth-child(4) { transform: translate(-50%, -50%) rotate(45deg); }
-.chakra::after:nth-child(5) { transform: translate(-50%, -50%) rotate(60deg); }
-.chakra::after:nth-child(6) { transform: translate(-50%, -50%) rotate(75deg); }
-.chakra::after:nth-child(7) { transform: translate(-50%, -50%) rotate(90deg); }
-.chakra::after:nth-child(8) { transform: translate(-50%, -50%) rotate(105deg); }
-.chakra::after:nth-child(9) { transform: translate(-50%, -50%) rotate(120deg); }
-.chakra::after:nth-child(10) { transform: translate(-50%, -50%) rotate(135deg); }
-.chakra::after:nth-child(11) { transform: translate(-50%, -50%) rotate(150deg); }
-.chakra::after:nth-child(12) { transform: translate(-50%, -50%) rotate(165deg); }
-.chakra::after:nth-child(13) { transform: translate(-50%, -50%) rotate(180deg); }
-.chakra::after:nth-child(14) { transform: translate(-50%, -50%) rotate(195deg); }
-.chakra::after:nth-child(15) { transform: translate(-50%, -50%) rotate(210deg); }
-.chakra::after:nth-child(16) { transform: translate(-50%, -50%) rotate(225deg); }
-.chakra::after:nth-child(17) { transform: translate(-50%, -50%) rotate(240deg); }
-.chakra::after:nth-child(18) { transform: translate(-50%, -50%) rotate(255deg); }
-.chakra::after:nth-child(19) { transform: translate(-50%, -50%) rotate(270deg); }
-.chakra::after:nth-child(20) { transform: translate(-50%, -50%) rotate(285deg); }
-.chakra::after:nth-child(21) { transform: translate(-50%, -50%) rotate(300deg); }
-.chakra::after:nth-child(22) { transform: translate(-50%, -50%) rotate(315deg); }
-.chakra::after:nth-child(23) { transform: translate(-50%, -50%) rotate(330deg); }
-.chakra::after:nth-child(24) { transform: translate(-50%, -50%) rotate(345deg); }
