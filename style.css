@@ -23,35 +23,18 @@ body {
   overflow: hidden;
 }
 
-.flag > div {
-  height: 100px;
+.flag-image {
   width: 100%;
+  height: auto;
+  display: block;
 }
 
-.saffron {
-  background-color: #FF9933;
-}
-
-.white {
-  background-color: #ffffff;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
+.saffron,
+.white,
 .green {
-  background-color: #138808;
+  display: none;
 }
 
-/* Chakra with 24 spokes using radial gradient */
-.chakra {
-  width: 60px;
-  height: 60px;
-  border: 2px solid #000080;
-  border-radius: 50%;
-  position: relative;
-  background: radial-gradient(circle at center, transparent 0%, transparent 45%, #000080 45%, #000080 50%, transparent 50%, transparent 100%),
-              repeating-conic-gradient(#000080 0deg 15deg, transparent 15deg 30deg);
-  background-size: 100% 100%;
+.footer {
+  margin-top: 15px;
 }
